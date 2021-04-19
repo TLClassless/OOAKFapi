@@ -36,6 +36,6 @@ jobs:
         run: |
           git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
           git pull github ${GITHUB_REF} --ff-only
-          git add ...
+          git add .
           git commit -m "updating API"
           git push github HEAD:${GITHUB_REF}
