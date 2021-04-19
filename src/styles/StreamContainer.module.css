@@ -1,0 +1,33 @@
+.StreamComponent {
+  height: 100%;
+  width: 100%;
+}
+
+.topContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #0eb37c;
+  background-image: url("../pixel-bg.png");
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.streamContainer {
+  width: 80%;
+  height: 80%;
+}
+
+@media only screen and (max-width: 800px) {
+  .streamContainer {
+    width: 100%;
+    height: 85%;
+  }
+
+  .clipContainer img {
+    height: 8rem;
+  }
+}
